@@ -85,14 +85,13 @@ export const FinalMessage: React.FC = () => {
                   
                   {/* Back of card - message */}
                   <div className={`absolute w-full h-full rounded-xl shadow-lg flex items-center justify-center p-4 backface-hidden rotate-y-180 ${
-                    card.color === "red" ? "bg-red-100" :
-                    card.color === "yellow" ? "bg-yellow-100" :
-                    card.color === "green" ? "bg-green-100" :
-                    card.color === "blue" ? "bg-blue-100" : "bg-purple-100"
-                  }`}>
-                    <p className="text-center text-gray-800 font-medium text-sm">
-                      {card.message}
-                    </p>
+                      card.color === "red" ? "bg-red-100" :
+                      card.color === "yellow" ? "bg-yellow-100" :
+                      card.color === "green" ? "bg-green-100" :
+                      card.color === "blue" ? "bg-blue-100" : "bg-purple-100"
+                    }`}>
+                      <div className="bg-white p-4 rounded-lg shadow max-w-sm w-full text-center">
+                        <p className="text-gray-800 font-medium text-sm break-words">{card.message}</p>
                   </div>
                 </div>
               </motion.div>
