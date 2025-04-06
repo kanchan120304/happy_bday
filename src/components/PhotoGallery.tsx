@@ -50,10 +50,10 @@ interface PhotoGalleryProps {
 // TimelineComponent based on your timeline example
 const TimelineComponent: React.FC<{ onProceed: () => void }> = ({ onProceed }) => {
   const timelineEvents = [
-    { icon: "🌟", title: "Starting From Here", desc: "You know very well, you texted me" },
-    { icon: "💌", title: "We talked", desc: "We started talking and the connection was instant" },
-    { icon: "🎵", title: "I Enjoyed talking to you", desc: "You have an amazing music taste, by the way" },
-    { icon: "✨", title: "To be continued...", desc: "Our story is just beginning" }
+    { icon: "🌟", title: "Starting From Here", desc: "ROOM 1? ..aap kon..... Dheeru bhaiyaa!!.. kya great n weird startt thiii ...well isey starting ni bolenge startingg toh vohh conincidence wale HI se hui thi.. agr voh ni hota toh aaj ham ni hotee ..Some things happenss for great!" },
+    { icon: "💌", title: "We talked", desc: "FIr hui haamrii baatein starttt.... online toh fir bhi ni hui thi but jiss way m jitni baatein hoti thi besttt hotii thii....... voh memoriess ......voh first time tear wipe krna .....chup chup k milne ki planning krna ....safe tiem kabh haii plan krnaa.... itni min k liye milenge ....everythingg Justt LOVEE <3.... uss din se abhi tak kitna dur aa gyee hai .. likin bhule ek bhi din ko nhi haii ....aage aise hi din banate bhi toh rehne haii babess... har din har topic har tariek ki baatein aapas m enjoy krte hai.. like aur chaiye bhi kya ham dono ko!! I LOVE YOUU<3  " },
+    { icon: "🎵", title: "I Enjoyed talking to you", desc: "Tera behavior teri innocence ... han han ik gnta ki innocent nhi hai ....starting m lagti thii..... fir dheere dheere open up huye tabh pta chala kya toph hai....uk tuje kitna bhi ladhluu kch bhi krluu ek cheez clear hai k i wont ever replace youu DHOLIKA!.. i promisee ladh lunga daat lunga todd dungaa but replace is never an option for mee ....i remember when i found u ...you made me feel better like no one elsee did!, kabhi kabhi sochta huu k ham saala strangers thee... blocklist me tha mee....nd abh look at us ....now we r close to each other itna k agr dono m se kisine kisiko bhi loose kia toh we will be the one crying for each other whole day..... Uk some ppl deservee a special place mentionss on theirr sspeciall dayy nd guess whattt this girll iss one of those luckiest girl existing on earth!.... more aheadd baee" },
+    { icon: "✨", title: "To be continued...", desc: "Our story is just beginning.. abhi toh bahott h aagee... dekhti jaa" }
   ];
 
   return (

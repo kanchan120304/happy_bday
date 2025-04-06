@@ -10,27 +10,27 @@ export const FinalMessage: React.FC = () => {
   const postcards = [
     {
       color: "red",
-      message: "You're the WILD CARD in my life - always full of surprises!",
+      message: "You're the WILD CARD in my life - YOu are my therapist of my worst timee.... life is soo much more crazy nd funn with uu bby jaan .my happy placeee.......you knoww u r thee bestedd giftt abhi takk kaa god has givenn too mee till the datee .... you means alott to mee itnaa k even words r not enough too describe uu in my zindagii! Vice versa..",
       symbol: "🃏"
     },
     {
       color: "yellow",
-      message: "Like a REVERSE card, you turned my world upside down (in the best way)!",
+      message: "Like a REVERSE card, you turned my world upside down (in the best way)!- WHen no one understand me, U did and supported mee alott in everyy situationn... uk our bond iss itna strong abh k it cannt bbe break by anyonee!.. uk sometimes when i gets angry that doesnt mean k i m ignoring uu ya i will leavee ....mera gussa kch bhi nhi hai mere pyaar nd affection towards u k comparision m... hnjii ikk gusse m idar udar ho jata hu thodaa butt aap ho sambhalne k liyee toh sambhale rhiyee .sahoo mereko aur m aapko.",
       symbol: "🔄"
     },
     {
       color: "green",
-      message: "You + Me = The ultimate DRAW FOUR partnership!",
+      message: "You + Me = The ultimate partnership!..A life partneer like youu is soo soo raree..... aapne meri meri saari nonsensee talkss sunii kabhii ni rokaa .... even iff u got bore of thosee .still tuen kabhi ni roka because u likee how happy i m while sharing it with u..basically i enjoyyed explanning nd u enjoyedd happy mee <3.... meri jaannnnn uk my love for youu is just unmeasurable .meter fatt jayega aisa haii ........ i promise to always stick by your side through the good and badd.....kitna bhi buri aa jaye situationn mee kabhi kahi ni jaungaa chrdkr ya tuje chordkee han gusse m shyd idar udar ho jauu k kch der baat ni kr rha ya kch but yaad rakhio chordunga kabhi nahi I PROMSIE TO ALWAYS STICK BY YOUR SIDEE!!",
       symbol: "+4"
     },
     {
       color: "blue",
-      message: "Our friendship SKIPS all the boring parts!",
+      message: "UK ourr talking skipss all the boring part or sadness of eachother .......We madee each others life better by simply being in it.. jeena sikha dia ek dusree ko :* Made each others life easyy by gracingg each otherss heart with ek dusre kii affection nd pyaarr <3.... YOu the Most incredible womentt i knoww and you make me feel amazing every single dat, i am soo happy and completely elated to have you in my life baee <3 <3 <3 <3 <3 ....MY everythingg.... My soulmatee And i promise to youu.. That i will lovee you always with my whoel heart I promise that i will always be their for youu in your good time or bad..... May the stormyy dayss we encounter and the trialss we face only make *us* grow stronger than ever before ........ jaani raed this line again ...kaafi deep nd acha meaning h ....proov last k 2-3 month jo kch hua hamare beech.",
       symbol: "⏭️"
     },
     {
       color: "purple",
-      message: "You make every day feel like a WINNING HAND!",
+      message: "You make every day feel like a WINNING HAND!...PTa hai jaani jabh me tujse mila tha mereko ek percent idea nhi thaa k tere aane se meri zindagii itni badal jayegi happy way me...... A love like ours happens once in a lifetiem ... manifesting everyday k yh love aise hi banaa rhe kabhi badle nahii..... You are Godsent precious Gift to me <3.... u r exactly the one i imagined in my delusional world.",
       symbol: "🎯"
     }
   ];
@@ -183,7 +183,7 @@ export const FinalMessage: React.FC = () => {
           </motion.div>
           
           <h1 className="text-4xl font-bold text-center text-red-600 mb-6">
-            🎲 HAPPY BIRTHDAY MADAM JII! 🎲
+            🎲 HAPPY BIRTHDAY TANNUUUMERIJANNNN! 🎲
           </h1>
           
           <p className="text-lg text-gray-800 leading-relaxed font-semibold text-center">

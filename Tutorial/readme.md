@@ -27,7 +27,7 @@ https://youtu.be/uCgAuOYpJd0?si=2ICwr3Ih1P_ru9KA
 
 use this command in the terminal and press enter: 
 
-Set-ExecutionPolicy -Scope CurrentUser Unrestricted
+
 
 }
 
