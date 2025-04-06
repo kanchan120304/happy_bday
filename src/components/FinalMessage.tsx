@@ -92,6 +92,7 @@ export const FinalMessage: React.FC = () => {
                     }`}>
                       <div className="bg-white p-4 rounded-lg shadow max-w-sm w-full text-center">
                         <p className="text-gray-800 font-medium text-sm break-words">{card.message}</p>
+                        </div>
                   </div>
                 </div>
               </motion.div>
