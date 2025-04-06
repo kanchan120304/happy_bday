@@ -6,7 +6,6 @@ export const FinalMessage: React.FC = () => {
   const [phase, setPhase] = useState<"postcards" | "game" | "final">("postcards");
   const [flipped, setFlipped] = useState<number[]>([]);
 
-  // UNO-style postcards with different colors and fun messages
   const postcards = [
     {
       color: "red",
@@ -50,7 +49,7 @@ export const FinalMessage: React.FC = () => {
     >
       {phase === "postcards" && (
         <motion.div
-          className="w-full max-w-4xl"
+          className="w-full max-w-6xl"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.3 }}
@@ -59,11 +58,11 @@ export const FinalMessage: React.FC = () => {
             SPECIAL POSTCARDS FOR YOU!
           </h1>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="flex justify-center gap-4">
             {postcards.map((card, idx) => (
               <motion.div
                 key={idx}
-                className={`h-48 cursor-pointer perspective-1000 ${flipped.includes(idx) ? '' : 'hover:scale-105'}`}
+                className={`w-52 h-80 cursor-pointer perspective-1000 ${flipped.includes(idx) ? '' : 'hover:scale-105'}`}
                 onClick={() => flipCard(idx)}
                 whileHover={!flipped.includes(idx) ? { scale: 1.05 } : {}}
                 whileTap={!flipped.includes(idx) ? { scale: 0.95 } : {}}
@@ -71,26 +70,26 @@ export const FinalMessage: React.FC = () => {
                 <div className={`relative w-full h-full transition-transform duration-500 transform-style-preserve-3d ${
                   flipped.includes(idx) ? 'rotate-y-180' : ''
                 }`}>
-                  {/* Front of card - UNO style */}
+                  {/* Front of card */}
                   <div className={`absolute w-full h-full rounded-xl shadow-lg flex items-center justify-center backface-hidden ${
                     card.color === "red" ? "bg-red-500" :
                     card.color === "yellow" ? "bg-yellow-400" :
                     card.color === "green" ? "bg-green-500" :
                     card.color === "blue" ? "bg-blue-500" : "bg-purple-500"
                   }`}>
-                    <div className="text-white text-6xl font-bold">
+                    <div className="text-white text-4xl font-bold">
                       {card.symbol}
                     </div>
                   </div>
                   
-                  {/* Back of card - message */}
-                  <div className={`absolute w-full h-full rounded-xl shadow-lg flex items-center justify-center p-4 backface-hidden rotate-y-180 ${
+                  {/* Back of card */}
+                  <div className={`absolute w-full h-full rounded-xl shadow-lg p-3 backface-hidden rotate-y-180 overflow-y-auto ${
                     card.color === "red" ? "bg-red-100" :
                     card.color === "yellow" ? "bg-yellow-100" :
                     card.color === "green" ? "bg-green-100" :
                     card.color === "blue" ? "bg-blue-100" : "bg-purple-100"
                   }`}>
-                    <p className="text-center text-gray-800 font-medium text-sm">
+                    <p className="text-gray-800 font-medium text-xs leading-tight whitespace-pre-wrap">
                       {card.message}
                     </p>
                   </div>
@@ -99,28 +98,25 @@ export const FinalMessage: React.FC = () => {
             ))}
           </div>
 
-          {(
-
-            <motion.div 
-              className="mt-8 flex justify-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
+          <motion.div 
+            className="mt-8 flex justify-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            <motion.button
+              className="px-6 py-3 bg-gradient-to-r from-red-600 to-purple-600 text-white rounded-full shadow-lg text-lg font-bold uppercase tracking-wide"
+              whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.2)" }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setPhase("game")}
             >
-              <motion.button
-                className="px-6 py-3 bg-gradient-to-r from-red-600 to-purple-600 text-white rounded-full shadow-lg text-lg font-bold uppercase tracking-wide"
-                whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.2)" }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setPhase("game")}
-              >
-                Special Message For You →
-              </motion.button>
-            </motion.div>
-          )}
+              Special Message For You →
+            </motion.button>
+          </motion.div>
         </motion.div>
       )}
 
-      {phase === "game" && (
+{phase === "game" && (
         <motion.div
           className="flex flex-col items-center"
           initial={{ scale: 0.8, opacity: 0 }}
